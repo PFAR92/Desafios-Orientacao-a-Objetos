@@ -1,31 +1,25 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-       Caneta c1 = new Caneta();
-       c1.cor = "Azul";
-       c1.ponta = 0.5f;
-       c1.destampar();
-       c1.status(); 
-       c1.rasbiscar();
+       ContaBanco p1 = new ContaBanco();
+       p1.setNumConta(1111);
+       p1.setDono("Jubileu");
+       p1.abrirConta("CC");
+       
 
-       System.out.println("================================================");
+        ContaBanco p2 = new ContaBanco();
+        p2.setNumConta(2222);
+        p2.setDono("Creuza");
+        p2.abrirConta("CP");
 
-       Caneta c2 = new Caneta();
-       c2.modelo = "Hostnet";
-       c2.cor = "Preta";
-       c2.rasbiscar();
-       c2.status();
+        p1.depositar(100);
+        p2.depositar(500);
+        p2.sacar(100f);
+        p1.sacar(140f);
+        
 
-       System.out.println("================================================");
-       Cachorro dog1 = new Cachorro();
-       dog1.nome = "Jujuba";
-       dog1.cor = "Marrom";
-       dog1.raca = "Bacê";
-       dog1.latindo = true;
 
-       dog1.status();
-       dog1.brincando();
-       dog1.correndo();
-
+        p1.estadoAtual();
+        p2.estadoAtual();
     }
 }
