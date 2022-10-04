@@ -6,6 +6,14 @@ public class Livro implements Publicacao{
     private boolean aberto;
     private Pessoa leitor;
 
+    
+
+    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.totPaginas = totPaginas;
+        this.leitor = leitor;
+    }
     public String getTitulo() {
         return titulo;
     }
@@ -43,29 +51,35 @@ public class Livro implements Publicacao{
         this.leitor = leitor;
     }
 
-    public void detalhes(){
-        
+    public String detalhes() {
+        return "Livro [titulo=" + titulo + ", autor=" + autor + ", totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
+                + ", aberto=" + aberto + ", leitor=" + leitor + "]";
     }
+
     @Override
     public void abrir() {
         // TODO Auto-generated method stub
         
     }
+
     @Override
     public void fechar() {
         // TODO Auto-generated method stub
         
     }
+
     @Override
     public void folhear() {
         // TODO Auto-generated method stub
         
     }
+
     @Override
     public void avancarPag() {
         // TODO Auto-generated method stub
         
     }
+
     @Override
     public void voltarPag() {
         // TODO Auto-generated method stub
