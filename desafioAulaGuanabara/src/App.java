@@ -11,6 +11,12 @@ public class App {
         livros[1] = new Livro("POO para iniciantes", "Pedro Paulo", 500, pessoas[1]);
         livros[2] = new Livro("Java Avançado", "Maria Candido", 800, pessoas[0]);
 
+        livros[0].abrir();
+        livros[0].folhear(100);
+        livros[0].avancarPag();
         System.out.println(livros[0].detalhes());
+        System.out.println("-----------------");
+
+        System.out.println(livros[1].detalhes());
     }
 }

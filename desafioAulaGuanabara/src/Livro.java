@@ -54,7 +54,7 @@ public class Livro implements Publicacao{
     }
 
     public String detalhes() {
-        return "Livro [titulo=" + titulo + "\n, autor=" + autor + "\n, totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
+        return "Livro [titulo=" + titulo + ", autor=" + autor + "\n, totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
                 + "\n, aberto=" + aberto + "\n, leitor=" + leitor.getNome() + ", idade=" + leitor.getIdade() 
                 + ", sexo=" + leitor.getSexo() +"]";
     }
@@ -73,7 +73,9 @@ public class Livro implements Publicacao{
 
     @Override
     public void folhear(int p) {
-        this.setPagAtual(p);
+        if(p <= this.getTotPaginas()) this.setPagAtual(p);
+        else this.setPagAtual(0);
+        
         
     }
 
