@@ -12,6 +12,8 @@ public class Livro implements Publicacao{
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
+        this.aberto = false;
+        this.pagAtual = 0;
         this.leitor = leitor;
     }
     public String getTitulo() {
@@ -52,8 +54,9 @@ public class Livro implements Publicacao{
     }
 
     public String detalhes() {
-        return "Livro [titulo=" + titulo + ", autor=" + autor + ", totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
-                + ", aberto=" + aberto + ", leitor=" + leitor + "]";
+        return "Livro [titulo=" + titulo + "\n, autor=" + autor + "\n, totPaginas=" + totPaginas + ", pagAtual=" + pagAtual
+                + "\n, aberto=" + aberto + "\n, leitor=" + leitor.getNome() + ", idade=" + leitor.getIdade() 
+                + ", sexo=" + leitor.getSexo() +"]";
     }
 
     @Override
