@@ -58,31 +58,31 @@ public class Livro implements Publicacao{
 
     @Override
     public void abrir() {
-        // TODO Auto-generated method stub
+        this.setAberto(true);
         
     }
 
     @Override
     public void fechar() {
-        // TODO Auto-generated method stub
+        this.setAberto(false);
         
     }
 
     @Override
-    public void folhear() {
-        // TODO Auto-generated method stub
+    public void folhear(int p) {
+        this.setPagAtual(p);
         
     }
 
     @Override
     public void avancarPag() {
-        // TODO Auto-generated method stub
+        this.setPagAtual(this.getPagAtual() + 1);
         
     }
 
     @Override
     public void voltarPag() {
-        // TODO Auto-generated method stub
+        this.setPagAtual(this.getPagAtual() - 1);
         
     }
 
