@@ -21,12 +21,6 @@ public class Professor extends Pessoa{
     public void setSalário(float salário) {
         this.salário = salário;
     }
-
-    @Override
-    public String toString() {
-        return "Professor [especialidade=" + especialidade + ", salário=" + salário + "]";
-    }
-
     
     
 }
