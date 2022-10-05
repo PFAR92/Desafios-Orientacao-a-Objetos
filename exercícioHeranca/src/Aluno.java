@@ -3,7 +3,7 @@ public class Aluno  extends Pessoa{
     private String curso;
 
     public void cancelarMatricula(){
-        System.out.println("Matricula será cancelada");
+        
     }
 
     public int getMatr() {
