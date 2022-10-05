@@ -1,22 +1,24 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Aluno p2 = new Aluno();
-        Professor p3 = new Professor();
         Visitante p4 = new Visitante();
 
-        p2.setNome("Maria");
-        p3.setNome("Claudio");
-        p4.setNome("Fabiana");
+        p4.setNome("Juvenal");
+        p4.setIdade(22);
+        p4.setSexo("M");
 
-        p4.setSexo("F");
+        p2.setNome("Claudio");
+        p2.setMatricula(111);
+        p2.setIdade(16);
+        p2.setSexo("M");
+        p2.pagarMensalidade();
 
-        p2.setIdade(18);
-        p2.setCurso("Informática");
+        Bolsista p1 = new Bolsista();
+        p1.setMatricula(1112);
+        p1.setNome("Jubileu");
+        p1.setBolsa(12.5f);
+        p1.setSexo("M");
+        p1.pagarMensalidade();
 
-        p3.setSalário(2500.75f);
-
-        System.out.println(p2.toString());
-        System.out.println(p3.toString());
-        System.out.println(p4.toString());
     }
 }

@@ -1,17 +1,17 @@
 public class Aluno  extends Pessoa{
-    private int matr;
+    private int matricula;
     private String curso;
 
     public void pagarMensalidade(){
-        
+        System.out.println("pagando mensalidade do aluno " + this.getNome());
     }
 
-    public int getMatr() {
-        return matr;
+    public int getMatricula() {
+        return matricula;
     }
 
-    public void setMatr(int matr) {
-        this.matr = matr;
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
     }
 
     public String getCurso() {
