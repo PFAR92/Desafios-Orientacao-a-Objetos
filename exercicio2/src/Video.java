@@ -7,17 +7,17 @@ public class Video implements AcoesVideo{
 
     @Override
     public void play() {
-        // TODO Auto-generated method stub
+        this.setReproduzindo(true);
         
     }
     @Override
     public void pause() {
-        // TODO Auto-generated method stub
+        this.setReproduzindo(false);
         
     }
     @Override
     public void like() {
-        // TODO Auto-generated method stub
+        this.setCurtidas(this.getCurtidas() + 1);
         
     }
     public String getTitulo() {

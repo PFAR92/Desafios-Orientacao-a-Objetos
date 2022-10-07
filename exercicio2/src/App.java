@@ -10,9 +10,9 @@ public class App {
         g[0] = new Gafanhoto("Jubileu", 22, "M", "juba");
         g[1] = new Gafanhoto("Creuza", 12, "F", "creuzita"); 
 
-        for(Video videos : v) System.out.println(videos);
-        System.out.println("----------------");
-        for(Gafanhoto pessoa : g) System.out.println(pessoa);
+        Visualizacao vi = new Visualizacao(g[0], v[1]);
+
+        System.out.println(vi);
 
 
 
