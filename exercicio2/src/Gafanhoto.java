@@ -1,4 +1,9 @@
 public class Gafanhoto extends Pessoa{
+    public Gafanhoto(String nome, int idade, String sexo) {
+        super(nome, idade, sexo);
+        //TODO Auto-generated constructor stub
+    }
+
     private String login;
     private int totAssistido;
 
@@ -27,5 +32,7 @@ public class Gafanhoto extends Pessoa{
         // TODO Auto-generated method stub
         
     }
+
+    
     
 }

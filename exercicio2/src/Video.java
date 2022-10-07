@@ -1,6 +1,6 @@
 public class Video implements AcoesVideo{
     private String titulo;
-    private String avaliacao;
+    private int avaliacao;
     private int views;
     private int curtidas;
     private boolean reproduzindo;
@@ -26,10 +26,10 @@ public class Video implements AcoesVideo{
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
-    public String getAvaliacao() {
+    public int getAvaliacao() {
         return avaliacao;
     }
-    public void setAvaliacao(String avaliacao) {
+    public void setAvaliacao(int avaliacao) {
         this.avaliacao = avaliacao;
     }
     public int getViews() {
@@ -50,6 +50,20 @@ public class Video implements AcoesVideo{
     public void setReproduzindo(boolean reproduzindo) {
         this.reproduzindo = reproduzindo;
     }
+    public Video(String titulo) {
+        this.titulo = titulo;
+        this.avaliacao = 1;
+        this.views = 0;
+        this.curtidas = 0;
+        this.reproduzindo = false;
+    }
+    @Override
+    public String toString() {
+        return "Video [titulo=" + titulo + ", avaliacao=" + avaliacao + ", views=" + views + ", curtidas=" + curtidas
+                + ", reproduzindo=" + reproduzindo + "]";
+    } 
 
+    
+    
     
 }
